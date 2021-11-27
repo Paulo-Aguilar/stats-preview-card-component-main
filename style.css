@@ -30,17 +30,39 @@
 .container h1{
     color: var(--White);
 }
-.insight{
-    color: var(--SoftViolet);
-}
 .container p{
     color: var(--SlightlyTransparentWhite2);
 }
 .container h1 span{
     color: var(--SlightlyTransparentWhite2);
-    font-size: 16px;
+}
+.container{
+    background-color: var(--DarkDesaturatedBlue);
+    width: 320px;
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 .headerPicture{
-    background: rgba(30,30,30, 0.5);
-    size: 20px;
+    position: relative;
+}
+.headerPicture:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(102, 0, 170, 0.5);
+}
+.insight h1 span{ 
+    color: var(--SoftViolet);
+    font-size: 24px;
+}
+.indexPicture{
+    width: 320px;
 }
